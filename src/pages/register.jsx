@@ -1,12 +1,14 @@
-import AuthLayout from '../Components/Layouts/AuthLayouts';
-import FormLogin from '../Components/Fragments/FormLogin';
+import AuthLayouts from "../components/Layouts/AuthLayouts";
+import FormRegister from "../components/Fragments/FormRegister";
+import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const RegisterPage = () => {
     return (
-        <AuthLayout title= "Login">
-            <FormLogin />
-        </AuthLayout>
-    )
-}
+        <AuthLayouts title="Register" type="register">
+            <FormRegister />
+            
+        </AuthLayouts>
+    );
+};
 
-export default LoginPage
+export default RegisterPage;
